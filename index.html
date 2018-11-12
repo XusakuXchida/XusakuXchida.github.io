@@ -1,1 +1,440 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='RailsエンジニアYusaku Uchida ポートフォリオ'>
+  <meta property='og:url' content='URL入る'>
+  <meta property='og:description' content='RailsエンジニアYusaku Uchidaのポートフォリオです。'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="RailsエンジニアYusaku Uchidaのポートフォリオです。" />
+  <title>RailsエンジニアYusaku Uchida ポートフォリオ</title>
+  <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+  <link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/photoswipe/photoswipe.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/photoswipe/default-skin/default-skin.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <h1 class="logo">
+        <span class="logo-name"></span>
+        <span class="logo-title">PORTFOLIO</span>
+        <span class="logo-desc">Railsエンジニア Yusaku Uchida</span>
+      </h1>
+    </header>
+    <center>
+      <table>
+        <tr>
+          <td><img src="img/ruby-card.png"/></td> 
+          <td><img src="img/rubyrails.png"/></td>
+        </tr>
+      </table>
+    </center><br>
+    <nav id="gnav">
+      <ul>
+        <li><a href="#potepanworks">POTEPAN WORKS</a></li>
+        <li><a href="#books">BOOKS</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skill">SKILL</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    <main id="contents">
+      <section class="section" id="potepanworks">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title">POTEPAN WORKS</h2>
+            <p class="section-desc">
+              Potepan Camp でECサイトを開発しました。
+            </p>
+          </div>
+          <div class="two-column-wrapper">
+            <div class="two-column-image">
+              <img src="img/potepanworks/potepanworks1.jpg" alt=""><br><br>
+              <img src="img/potepanworks/potepanworks2.jpg" alt=""><br><br>
+              <img src="img/potepanworks/potepanworks3.jpg" alt=""><br><br>
+            </div>
+            <div class="two-column-desc">
+              <p class="text">
+                作品タイトル：BIG BAG
+                <br>制作期間：約3ヶ月
+                <br>URL：
+                <a href="https://murmuring-mountain-56557.herokuapp.com/potepan">https://murmuring-mountain-56557.herokuapp.com/potepan</a><br>
+                <br><h3> コメント：</h3>
+                Ruby on Rails製のオープンソースECパッケージ<a href="https://github.com/solidusio/solidus">solidus</a>を使ったECサイトを作成しました。<br>
+                現役のRailsエンジニアによるコードレビューでLGTMを貰ったらmergeしていき、一つ一つ課題をクリアするというプロセスで開発シミュレーションを行いました。<br>
+
+                <br><h3> 動作仕様:</h3>
+                  <li>カテゴリー毎の商品一覧表示</li>
+                  <li>商品詳細ページでの関連商品表示</li>
+                  <li>home画面での新着商品表示</li>
+                  <li>商品一覧の並び替え</li>
+                  <li>商品の文字列検索</li>
+                  <li>Grid/Listの非同期な表示切り替え</li>
+
+                <br><h3> 修得したスキル:</h3>
+                  <li>Ruby on Railsらしい設計思想</li>
+                  <li>Gitの基本的な操作</li>
+                  <li>RSpecを用いたテスト駆動開発</li>
+                  <li>リファクタリング</li>
+                  <li>コーディングルールを守った記述(rubocop)</li>
+                  <li>SQLパフォーマンスを意識したコーディング(N+1問題の解決など)</li>
+                  <li>ajaxの非同期処理</li>
+                  <li>herokuへのデプロイ</li>
+                <br><h3> Source Code:</h3>
+                <a href="https://bitbucket.org/yusaku_uchida/potepanec/src/master/">Potepan_EC</a>
+
+                <br> レビューやりとり
+                  <li><a href="https://bitbucket.org/yusaku_uchida/potepanec/pull-requests/2/2/diff">課題2</a></li>
+                  <li><a href="https://bitbucket.org/yusaku_uchida/potepanec/pull-requests/3/kadai3/diff">課題3</a></li>
+                  <li><a href="https://bitbucket.org/yusaku_uchida/potepanec/pull-requests/4/kadai4/diff">課題4</a></li>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="books">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title">BOOKS</h2>
+            <div class="section-desc">
+              <p class="text">
+                これまでの学習で使用した書籍です。</p>
+            </div>
+          </div>
+          <div class="card-wrapper my-gallery">
+            <figure class="card">
+              <figcaption class="card-caption">
+                <p class="card-caption-title">たのしいRuby 第5版 </p>
+                <p class="card-caption-url"><a class="url-link" href="https://www.amazon.co.jp/dp/B01C804DO8/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1" target="_blank">Link</a></p>
+              </figcaption>
+              <a href="#" data-size="980x668" class="card-image">
+          			<img src="img/books/tanosii_ruby.jpg" alt="" />
+          		</a>
+            </figure>
+
+            <figure class="card">
+              <figcaption class="card-caption">
+                <p class="card-caption-title">Everyday Rails - RSpecによるRailsテスト入門</p>
+                <p class="card-caption-url"><a class="url-link" href="https://leanpub.com/everydayrailsrspec-jp" target="_blank">Link</a></p>
+              </figcaption>
+              <a href="#" data-size="980x668" class="card-image">
+                <img src="img/books/everyday_rails.jpg" alt="" />
+              </a>
+            </figure>
+
+            <figure class="card">
+              <figcaption class="card-caption">
+                <p class="card-caption-title">メタプログラミング Ruby</p>
+                <p class="card-caption-url"><a class="url-link" href="https://www.oreilly.co.jp/books/9784873117430/" target="_blank">Link</a></p>
+              </figcaption>
+              <a href="#" data-size="980x668" class="card-image">
+                <img src="img/books/meta_ruby.jpg" alt="" />
+              </a>
+            </figure>
+
+            <figure class="card">
+              <figcaption class="card-caption">
+                <p class="card-caption-title">現場で使える Ruby on Rails 5速習実践ガイド</p>
+                <p class="card-caption-url"><a class="url-link" href="https://book.mynavi.jp/ec/products/detail/id=93905" target="_blank">Link</a></p>
+              </figcaption>
+              <a href="#" data-size="980x668" class="card-image">
+                <img src="img/books/ror5.jpg" alt="" />
+              </a>
+            </figure>
+
+            <figure class="card">
+              <figcaption class="card-caption">
+                <p class="card-caption-title">Webを支える技術 -HTTP、URI、HTML、そしてREST </p>
+                <p class="card-caption-url"><a class="url-link" href="http://gihyo.jp/magazine/wdpress/plus/978-4-7741-4204-3" target="_blank">Link</a></p>
+              </figcaption>
+              <a href="#" data-size="980x668" class="card-image">
+                <img src="img/books/webwosasaeru.jpg" alt="" />
+              </a>
+            </figure>
+
+            <figure class="card">
+              <figcaption class="card-caption">
+                <p class="card-caption-title">Webエンジニアのための データベース技術[実践]入門 </p>
+                <p class="card-caption-url"><a class="url-link" href="https://bookmeter.com/books/4666105" target="_blank">Link</a></p>
+              </figcaption>
+              <a href="#" data-size="980x668" class="card-image">
+                <img src="img/books/database_nyumon.jpg" alt="" />
+              </a>
+            </figure>
+
+  <!--           <figure class="card">
+              <a href="img/books/dammy.jpg" data-size="980x668" class="card-image">
+                <img src="img/books/thumb/thumb_dammy.jpg" alt="" />
+              </a>
+              <figcaption class="card-caption">
+                <p class="card-caption-title">作品タイトル</p>
+                <p class="card-caption-info">Design / Coding</p>
+                <p class="card-caption-url"><a class="url-link" href="＃" target="_blank">Link</a></p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <a href="img/books/dammy.jpg" data-size="980x668" class="card-image">
+                <img src="img/books/thumb/thumb_dammy.jpg" alt="" />
+              </a>
+              <figcaption class="card-caption">
+                <p class="card-caption-title">作品タイトル</p>
+                <p class="card-caption-info">Design / Coding</p>
+                <p class="card-caption-url"><a class="url-link" href="＃" target="_blank">Link</a></p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <a href="img/books/dammy.jpg" data-size="980x668" class="card-image">
+                <img src="img/books/thumb/thumb_dammy.jpg" alt="" />
+              </a>
+              <figcaption class="card-caption">
+                <p class="card-caption-title">作品タイトル</p>
+                <p class="card-caption-info">Design / Coding</p>
+                <p class="card-caption-url"><a class="url-link" href="＃" target="_blank">Link</a></p>
+              </figcaption>
+            </figure> -->
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title">ABOUT</h2>
+            <p class="section-desc">
+              こんにちは。Yusaku Uchidaと申します。
+            </p>
+          </div>
+          <div class="two-column-wrapper">
+            <div class="two-column-image">
+              <img src="img/profile/img_profile.jpg" alt=""><br>
+              <img src="img/profile/img_profile2.jpg" alt="">
+            </div>
+            <div class="two-column-desc">
+              <p class="text">
+              前職ではネットワークエンジニアとしてのキャリアを積んで参りましたが、動的なwebの技術に興味を持ち、Ruby on Railsを修得すべくポテパンキャンプに通い始めました。<br>
+              今後はRuby以外の言語、データベース、仮想化されていくインフラ技術についても知見を広げていかねばならないと思っております。
+              <br><br>ゆくゆくはインフラに強いフルスタックなエンジニアを目指していきたいです。</p>
+              <br><h3>前職の仕事内容</h3>
+              主に、某キャリアさんの家庭用無線LAN機器の検証やビッグデータ（公衆無線LANのlog）分析を行ってました。<br>
+              ※画像はイメージです
+              <table>
+                <tr>
+                  <td width="150"><img src="img/profile/wi-fi.jpg" alt=""> </td>
+                  <td width="150"><img src="img/profile/tableau.jpg" alt=""> </td>
+                  <td><img src="img/profile/tab-10.jpg" alt=""> </td>
+                </tr>
+              </table>
+              <br><h3>取得資格一覧</h3>
+                <li>CCNA</li>
+                <li>CCNP</li>
+                <li>基本情報技術者</li>
+                <li>ネットワークスペシャリスト</li>
+              <br><h3>趣味</h3>
+                <li>映画鑑賞・SF小説</li>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="skill">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title">SKILL</h2>
+            <p class="section-desc">
+              webエンジニアとしては未経験ですが頑張ります！
+            </p>
+          </div>
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="skill-icon">
+                <img src="img/skill/html5css3.png" alt="">
+              </div>
+              <div class="skill-desc">
+                <h3 class="skill-desc-title">HTML5/CSS3</h3>
+                <div class="rating">
+                  <p class="rate rate3"></p>
+                </div>
+                <p class="text">progateで全てのレッスンを受講・実務経験なし</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="skill-icon">
+                <img src="img/skill/javascript.png" alt="">
+              </div>
+              <div class="skill-desc">
+                <h3 class="skill-desc-title">JavaScript</h3>
+                <div class="rating">
+                  <p class="rate rate3"></p>
+                </div>
+                <p class="text">progateで全てのレッスンを受講・実務経験なし</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="skill-icon">
+                <img src="img/skill/rails.jpg" alt="">
+              </div>
+              <div class="skill-desc">
+                <h3 class="skill-desc-title">Ruby on Rails</h3>
+                <div class="rating">
+                  <p class="rate rate4"></p>
+                </div>
+                <p class="text">ポテパンキャンプで開発シミュレーションを行いました。</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="skill-icon">
+                <img src="img/skill/terminal.png" alt="">
+              </div>
+              <div class="skill-desc">
+                <h3 class="skill-desc-title">Comand Line</h3>
+                <div class="rating">
+                  <p class="rate rate5"></p>
+                </div>
+                <p class="text">前職でserverのdata処理に携わっていました(logをsed&awk)。簡単なshell scriptなら書けます。</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="skill-icon">
+                <img src="img/skill/tcpip.png" alt="">
+              </div>
+              <div class="skill-desc">
+                <h3 class="skill-desc-title">Network</h3>
+                <div class="rating">
+                  <p class="rate rate5"></p>
+                </div>
+                <p class="text">
+                前職でネットワーク機器の検証業務を行ってました。特に無線LANまわりとセキュリティーに強いです。ネットワークスペシャリストホルダーです。</p>
+              </div>
+            </div>
+            <br>
+          </div>
+          <p class="section-desc">
+            今後体得したい技術
+          </p>
+          <div class="skill-icon">
+            <center>
+              <table><tr>
+                <td><img src="img/skill/aws.png" alt=""></td>
+                <td><img src="img/skill/docker.png" alt=""></td>
+                <td><img src="img/skill/mysql.png" alt=""></td>
+                <td><img src="img/skill/react.png" alt=""></td>
+              </tr></table>
+            </center>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="contact">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title">CONTACT</h2>
+          </div>
+          <div class="contact-wrapper">
+            <div class="contact-list">
+              <ul>
+                <li><a href="#" target="_blank"><img src="img/contact/twtter.png" alt=""><span class="contact-list-desc">Twitter</span></a></li>
+                <li><a href="#" target="_blank"><img src="img/contact/facebook.png" alt=""><span class="contact-list-desc">Facebook</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <nav class="footer-link">
+          <ul>
+            <li><a href="#potepanworks">POTEPAN WORKS</a></li>
+            <li><a href="#books">BOOKS</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+        <p class="copyright">Copyright&copy;Sho Satoh. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+           It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides.
+              PhotoSwipe keeps only 3 of them in the DOM to save memory.
+              Don't modify these 3 pswp__item elements, data is added later on. -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+
+        <div class="pswp__top-bar">
+
+          <!--  Controls are self-explanatory. Order can be changed. -->
+
+          <div class="pswp__counter"></div>
+
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+
+
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+          <!-- element will get class pswp__preloader--active when preloader is running -->
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+              </button>
+
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+              </button>
+
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe.min.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe-ui-default.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe_setup.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
+</html>
