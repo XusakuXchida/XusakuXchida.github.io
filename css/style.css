@@ -115,6 +115,10 @@ ul, li {
 　グローバルナビ
 ---------------------------------*/
 
+.image_logos {
+  display: none;
+}
+
 #gnav {
   padding: 10px;
   font-family: 'Open sans', sans-serif;
@@ -222,6 +226,15 @@ ul, li {
 
 #potepanworks .two-column-desc {
   width: 48%;
+}
+
+#title-omake {
+  border-bottom:1px solid #ccc;
+  cursor:pointer;
+  position:relative;
+}
+#work-omake {
+  display: none;
 }
 
 /*--------------------------------
@@ -377,6 +390,12 @@ ul, li {
   width: 100px;
 }
 
+.card {
+  cursor:pointer;
+}
+.skill-text {
+  display: none;
+}
 /*--------------------------------
  CONTACT
 ---------------------------------*/

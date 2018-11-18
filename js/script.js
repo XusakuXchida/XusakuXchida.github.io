@@ -54,4 +54,25 @@ $(function() {
       $("#contents").css("margin-top", "0");
     }
   });
+
+  $('.image_logos').fadeIn(2000);
+
+  $('.card').hover(function(){
+    $(this).find('.skill-text').fadeIn();
+  },function(){
+    $(this).find('.skill-text').fadeOut();
+  });
+
+  $('#title-omake').click(function(){
+    if ($(this).hasClass('open')) {
+      $(this).removeClass('open');
+      $('#work-omake').css('display', 'none');
+      $(this).find('span').text('+');
+    }else {
+      $(this).addClass('open');
+      $('#work-omake').css('display', 'block');
+      $(this).find('span').text('-');
+    }
+    
+  })
 });
