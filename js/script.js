@@ -59,8 +59,10 @@ $(function() {
 
   $('.card').hover(function(){
     $(this).find('.skill-text').fadeIn();
+    $(this).find('.skill-icon img').css({transform: "scale(1.3)"});
   },function(){
     $(this).find('.skill-text').fadeOut();
+    $(this).find('.skill-icon img').css({transform: "scale(1.0)"});
   });
 
   $('#title-omake').click(function(){
@@ -73,6 +75,17 @@ $(function() {
       $('#work-omake').css('display', 'block');
       $(this).find('span').text('-');
     }
-    
-  })
+  });
+
+  // test_page
+
+  for (  var i=0; i<10; i++  ) {
+    $('#nmap').fadeToggle(5000);
+  }
+
+  $('.contact-img').hover(function(){
+    $(this).css({transform: "scale(1.1)"}, {transition: "2s"});
+  },function(){
+    $(this).css({transform: "scale(1.0)"}, {transition: "2s"});
+  });
 });
